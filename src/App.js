@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import {useState} from 'react';
+import {StartPage} from "./components/StartPage";
+import {QuizPage} from "./components/QuizPage";
 import './App.css';
+import { Layout } from './components/Layout';
 
 function App() {
+  const [quizStarted , setQuizStarted] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+  {quizStarted ? <QuizPage/> : <StartPage changeQuizStatus={setQuizStarted}/> } 
+
+
+    </Layout>    
+      
+    
   );
 }
 
