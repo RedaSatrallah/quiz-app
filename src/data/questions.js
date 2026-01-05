@@ -2,27 +2,28 @@ export const questions = [
   { 
     id : 1,
     question: "Which country won the 2022 FIFA World Cup?",
-    options: ["Argentina", "France", "Brazil", "Germany"],
+    options: ["Germany","Argentina", "France", "Brazil"],
     answer: "Argentina"
   },
   {
     id : 2,
     question: "Who is known as 'CR7'?",
-    options: ["Cristiano Ronaldo", "Lionel Messi", "Neymar", "Kylian Mbappé"],
+    options: ["Lionel Messi", "Neymar","Cristiano Ronaldo", "Kylian Mbappé"],
     answer: "Cristiano Ronaldo"
   },
   {
     id : 3,
     question: "Which club has won the most UEFA Champions League titles?",
-    options: ["Real Madrid", "Barcelona", "AC Milan", "Liverpool"],
+    options: [ "Barcelona", "AC Milan","Real Madrid", "Liverpool"],
     answer: "Real Madrid"
   },
   {
     id : 4,
     question: "In football, what is a 'hat-trick'?",
     options: [
-      "Three goals by one player in a match",
+      
       "Three yellow cards",
+       "Three goals by one player in a match",
       "Three substitutions",
       "Three corner kicks"
     ],
